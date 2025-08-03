@@ -7,8 +7,9 @@ body {
 }
 
 header {
+  position: relative;
   background-color: #F3E8DC;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 3rem 1rem;
   text-align: center;
 }
 
@@ -86,9 +87,28 @@ h2 {
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .button:hover {
+  background-color: #B36934;
+}
+
+#btnLang {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #D17C43;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#btnLang:hover {
   background-color: #B36934;
 }
 
@@ -98,4 +118,31 @@ footer {
   text-align: center;
   font-size: 0.9rem;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  nav a {
+    margin: 0.5rem 1rem;
+  }
+
+  .galeria {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .galeria img {
+    max-width: 100%;
+  }
+}
+
+
 
