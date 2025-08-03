@@ -1,78 +1,51 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Carolin Santos</title>
   <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
-    <img src="assets/logo.png" alt="Logo Carolin Santos" class="logo" />
-    <h1 id="title">Carolin Santos</h1>
-    <p class="slogan" id="slogan">Crochet con sabor a sol y calma</p>
+    <img src="assets/logo.png" alt="Logo Carolin Santos" class="logo"/>
+    <h1>Carolin Santos</h1>
+    <p class="slogan">Crochet con sabor a sol y calma</p>
     <nav>
-      <a href="#inicio" id="navInicio">Inicio</a>
-      <a href="#sobre-mi" id="navSobre">Sobre mí</a>
-      <a href="#productos" id="navProductos">Productos</a>
-      <a href="#contacto" id="navContacto">Contacto</a>
+      <a href="#bienvenida">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#contacto">Contacto</a>
+      <button id="lang-toggle">EN</button>
     </nav>
-    <button id="btnLang" aria-label="Cambiar idioma">EN</button>
   </header>
 
   <main>
-    <section id="inicio">
-      <h2 id="h2Inicio">Bienvenidos</h2>
-      <p id="pInicio">
-        Creaciones únicas hechas a mano, perfectas para quienes aman lo artesanal y el estilo natural. Desde cardigans hasta accesorios de playa, todo con un toque de calidez.
-      </p>
-    </section>
-
-    <section id="sobre-mi">
-      <h2 id="h2Sobre">Sobre mí</h2>
-      <p id="pSobre">
-        Hola, soy Carolin. Diseñadora de piezas en crochet inspiradas en la tranquilidad del mar y la calidez del sol caribeño. Cada prenda que creo tiene un pedacito de mi historia.
-      </p>
+    <section id="bienvenida">
+      <h2>¡Bienvenid@!</h2>
+      <p>Descubre creaciones hechas a mano con amor, ideales para acompañarte en días de sol, playa y calma. Cada pieza es única, inspirada en el Caribe y el arte del crochet.</p>
     </section>
 
     <section id="productos">
-      <h2 id="h2Productos">Algunos productos</h2>
-      <p id="pProductos">
-        Muy pronto podrás ver aquí algunas fotos de mis creaciones favoritas. Mientras tanto, visita mi Instagram para ver todo lo que he hecho.
-      </p>
-      <a
-        class="button"
-        href="https://www.instagram.com/carolinsantos_/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Ver Instagram de Carolin Santos"
-        id="btnInstagram"
-      >Ver en Instagram</a>
-
+      <h2>Algunos productos</h2>
       <div class="galeria">
-        <img src="assets/cardigan1.jpg" alt="Bolso hecho a mano" />
-        <img src="assets/cardigan2.jpg" alt="Cardigan crochet" />
+        <img src="assets/cardigan1.jpg" alt="Producto 1"/>
+        <img src="assets/cardigan2.jpg" alt="Producto 2"/>
       </div>
+      <p>Para ver más, visita nuestro Instagram.</p>
+      <a class="button" href="https://www.instagram.com/carolinsantos_/" target="_blank">Ver en Instagram</a>
     </section>
 
     <section id="contacto">
-      <h2 id="h2Contacto">Contacto</h2>
-      <p id="pContacto">
-        ¿Te interesa un pedido personalizado o tienes alguna duda? Escríbeme por Instagram o envíame un correo.
-      </p>
-      <a
-        class="button"
-        href="mailto:carolinsantosv@gmail.com"
-        aria-label="Enviar correo a Carolin Santos"
-        id="btnEmail"
-      >Escríbeme</a>
+      <h2>Contacto</h2>
+      <p>¿Tienes alguna idea o quieres un pedido personalizado? ¡Escríbeme!</p>
+      <a class="button" href="mailto:carolinsantos@gmail.com">Enviar correo</a>
     </section>
   </main>
 
   <footer>
-  <p id="footerText">&copy; 2025 Carolin Santos. Todos los derechos reservados.</p>
+    <p>&copy; 2025 Carolin Santos. Hecho con 🌞 y 🌊 desde el Caribe.</p>
   </footer>
-
-  <script src="scripts.js"></script>
 </body>
 </html>
