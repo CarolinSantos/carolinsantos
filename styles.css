@@ -4,8 +4,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fdfbf7; /* beige clarito */
-  color: #6f5e4e; /* marrón suave */
+  background-color: #fdfbf7;
+  color: #6f5e4e;
 }
 
 header {
@@ -197,3 +197,4 @@ footer {
     max-width: 100%;
   }
 }
+
