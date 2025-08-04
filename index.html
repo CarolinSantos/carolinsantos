@@ -6,6 +6,7 @@
   <title>Carolin Santos - Crochet Artesanal</title>
   <link rel="stylesheet" href="styles.css" />
   <script defer src="scripts.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Playfair+Display&family=Pacifico&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
@@ -13,64 +14,192 @@
       <img src="assets/logo.png" alt="Logo Carolin Santos" class="logo" />
       <div class="header-text">
         <h1>Carolin Santos</h1>
-        <p class="slogan">Crochet con sabor a sol y calma</p>
+        <p class="slogan lang-es">Crochet con sabor a sol y calma</p>
+        <p class="slogan lang-en" style="display:none;">Crochet with a taste of sun and calm</p>
       </div>
       <button id="lang-toggle" aria-label="Cambiar idioma" title="Cambiar idioma">EN</button>
     </div>
     <nav>
-      <a href="#bienvenida" class="active">Inicio</a>
-      <a href="#productos">Productos</a>
-      <a href="#contacto">Contacto</a>
+      <a href="#bienvenida" class="active lang-es">Inicio</a>
+      <a href="#productos" class="lang-es">Productos</a>
+      <a href="#contacto" class="lang-es">Contacto</a>
+      <a href="#bienvenida" class="active lang-en" style="display:none;">Home</a>
+      <a href="#productos" class="lang-en" style="display:none;">Products</a>
+      <a href="#contacto" class="lang-en" style="display:none;">Contact</a>
     </nav>
   </header>
 
   <main>
     <section id="bienvenida" class="section-content">
       <h2 class="lang-es">¡Bienvenid@ a Carolin Santos!</h2>
-      <p class="lang-es">Descubre el arte del crochet hecho a mano con dedicación y amor. Cada pieza está diseñada para brindarte calidez, estilo y la esencia del Caribe en cada hilo.</p>
+      <p class="lang-es">
+        Descubre el arte del crochet hecho a mano con dedicación y amor. Cada pieza está diseñada para brindarte calidez, estilo y la esencia del Caribe en cada hilo.
+      </p>
 
       <h2 class="lang-en" style="display:none;">Welcome to Carolin Santos!</h2>
-      <p class="lang-en" style="display:none;">Discover the art of handmade crochet with dedication and love. Each piece is designed to bring you warmth, style, and the essence of the Caribbean in every stitch.</p>
+      <p class="lang-en" style="display:none;">
+        Discover the art of handmade crochet with dedication and love. Each piece is designed to bring you warmth, style, and the essence of the Caribbean in every stitch.
+      </p>
     </section>
 
+    <!-- NUEVA SECCIÓN PRODUCTOS CON CATEGORÍAS -->
     <section id="productos" class="section-content">
-      <h2 class="lang-es">Nuestros productos destacados</h2>
-      <h2 class="lang-en" style="display:none;">Our Featured Products</h2>
+      <h2 class="lang-es">Productos</h2>
+      <h2 class="lang-en" style="display:none;">Products</h2>
 
-      <div class="galeria">
-        <img src="assets/cardigan1.jpg" alt="Cardigan de crochet hecho a mano" />
-        <img src="assets/cardigan2.jpg" alt="Bolso artesanal de crochet" />
+      <!-- Categoría Tops -->
+      <div class="categoria-productos">
+        <h3 class="lang-es">Tops</h3>
+        <h3 class="lang-en" style="display:none;">Tops</h3>
+        <div class="galeria">
+          <article class="card" tabindex="0">
+            <img src="assets/top1.jpg" alt="Top de crochet blanco" />
+            <h4 class="lang-es">Top Blanco</h4>
+            <h4 class="lang-en" style="display:none;">White Top</h4>
+            <p class="lang-es">Ligero y fresco, ideal para verano.</p>
+            <p class="lang-en" style="display:none;">Light and fresh, perfect for summer.</p>
+            <button class="order-btn lang-es" aria-label="Pedir Top Blanco">Haz tu pedido</button>
+            <button class="order-btn lang-en" aria-label="Order White Top" style="display:none;">Order</button>
+          </article>
+          <article class="card" tabindex="0">
+            <img src="assets/top2.jpg" alt="Top rosa de crochet" />
+            <h4 class="lang-es">Top Rosa</h4>
+            <h4 class="lang-en" style="display:none;">Pink Top</h4>
+            <p class="lang-es">Color suave con diseño artesanal.</p>
+            <p class="lang-en" style="display:none;">Soft color with handmade design.</p>
+            <button class="order-btn lang-es" aria-label="Pedir Top Rosa">Haz tu pedido</button>
+            <button class="order-btn lang-en" aria-label="Order Pink Top" style="display:none;">Order</button>
+          </article>
+        </div>
       </div>
 
-      <p class="lang-es">Desde cardigans hasta bolsos y accesorios playeros, todo elaborado artesanalmente para ti. ¿Quieres algo personalizado? ¡Contáctanos!</p>
-      <p class="lang-en" style="display:none;">From cardigans to bags and beach accessories, all handcrafted just for you. Want something custom? Contact us!</p>
+      <!-- Categoría Bolsos -->
+      <div class="categoria-productos">
+        <h3 class="lang-es">Bolsos</h3>
+        <h3 class="lang-en" style="display:none;">Bags</h3>
+        <div class="galeria">
+          <article class="card" tabindex="0">
+            <img src="assets/bolso1.jpg" alt="Bolso beige de crochet" />
+            <h4 class="lang-es">Bolso Beige</h4>
+            <h4 class="lang-en" style="display:none;">Beige Bag</h4>
+            <p class="lang-es">Perfecto para la playa o la ciudad.</p>
+            <p class="lang-en" style="display:none;">Perfect for beach or city.</p>
+            <button class="order-btn lang-es" aria-label="Pedir Bolso Beige">Haz tu pedido</button>
+            <button class="order-btn lang-en" aria-label="Order Beige Bag" style="display:none;">Order</button>
+          </article>
+          <!-- Puedes agregar más bolsas aquí -->
+        </div>
+      </div>
 
-      <a class="button" href="https://www.instagram.com/carolinsantos_/" target="_blank" rel="noopener noreferrer">
-        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="10"></circle>
-          <line x1="16" y1="11" x2="12" y2="15"></line>
-          <line x1="12" y1="15" x2="8" y2="11"></line>
-        </svg>
-        <span class="lang-es">Ver en Instagram</span>
-        <span class="lang-en" style="display:none;">See on Instagram</span>
-      </a>
+      <!-- Categoría Cardigans -->
+      <div class="categoria-productos">
+        <h3 class="lang-es">Cardigans</h3>
+        <h3 class="lang-en" style="display:none;">Cardigans</h3>
+        <div class="galeria">
+          <article class="card" tabindex="0">
+            <img src="assets/cardigan1.jpg" alt="Cardigan marrón" />
+            <h4 class="lang-es">Cardigan Marrón</h4>
+            <h4 class="lang-en" style="display:none;">Brown Cardigan</h4>
+            <p class="lang-es">Calidez y estilo para cualquier ocasión.</p>
+            <p class="lang-en" style="display:none;">Warmth and style for any occasion.</p>
+            <button class="order-btn lang-es" aria-label="Pedir Cardigan Marrón">Haz tu pedido</button>
+            <button class="order-btn lang-en" aria-label="Order Brown Cardigan" style="display:none;">Order</button>
+          </article>
+          <!-- Más cardigans si quieres -->
+        </div>
+      </div>
+
+      <div class="categoria-productos">
+        <h3 class="lang-es">Otros</h3>
+        <h3 class="lang-en" style="display:none;">Others</h3>
+        <div class="galeria">
+          <article class="card" tabindex="0">
+            <img src="assets/accesorio1.jpg" alt="Accesorio de crochet" />
+            <h4 class="lang-es">Accesorio Único</h4>
+            <h4 class="lang-en" style="display:none;">Unique Accessory</h4>
+            <p class="lang-es">Detalles que marcan la diferencia.</p>
+            <p class="lang-en" style="display:none;">Details that make the difference.</p>
+            <button class="order-btn lang-es" aria-label="Pedir Accesorio Único">Haz tu pedido</button>
+            <button class="order-btn lang-en" aria-label="Order Unique Accessory" style="display:none;">Order</button>
+          </article>
+        </div>
+      </div>
+
+      <p class="lang-es">¿Quieres algo personalizado? ¡Contáctanos!</p>
+      <p class="lang-en" style="display:none;">Want something custom? Contact us!</p>
+
+      <div class="contact-links">
+        <a class="button instagram-btn" href="https://www.instagram.com/carolinsantos_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37a4 4 0 1 1-4.88-4.88 4 4 0 0 1 4.88 4.88z"></path>
+            <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+          </svg>
+          Instagram
+        </a>
+
+        <a class="button mail-btn" href="mailto:carolinsantos@gmail.com" aria-label="Enviar correo">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16v16H4z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          Email
+        </a>
+      </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN CONSEJOS Y TIPS -->
+    <section id="consejos" class="section-content">
+      <h2 class="lang-es">Consejos y Tips para cuidar tus prendas</h2>
+      <h2 class="lang-en" style="display:none;">Tips for Caring Your Garments</h2>
+      <div class="consejos-lista">
+        <article tabindex="0">
+          <h3 class="lang-es">Lava tus prendas a mano</h3>
+          <h3 class="lang-en" style="display:none;">Wash Your Garments by Hand</h3>
+          <p class="lang-es">Para preservar la textura y los colores, evita la lavadora y lava suavemente con agua fría.</p>
+          <p class="lang-en" style="display:none;">To preserve texture and colors, avoid machine washing and gently wash with cold water.</p>
+        </article>
+        <article tabindex="0">
+          <h3 class="lang-es">Seca al aire libre</h3>
+          <h3 class="lang-en" style="display:none;">Air Dry</h3>
+          <p class="lang-es">Evita el secado en secadora para no deformar las piezas. Mejor usa un tendedero o colgador plano.</p>
+          <p class="lang-en" style="display:none;">Avoid tumble drying to prevent deformation. Use a drying rack or flat hanger instead.</p>
+        </article>
+        <article tabindex="0">
+          <h3 class="lang-es">Guarda doblado</h3>
+          <h3 class="lang-en" style="display:none;">Store Folded</h3>
+          <p class="lang-es">Evita colgar tus prendas de crochet para que no se estiren. Lo ideal es doblarlas con cuidado.</p>
+          <p class="lang-en" style="display:none;">Avoid hanging your crochet garments to prevent stretching. Ideally fold them carefully.</p>
+        </article>
+        <article tabindex="0">
+          <h3 class="lang-es">Personaliza tu estilo</h3>
+          <h3 class="lang-en" style="display:none;">Customize Your Style</h3>
+          <p class="lang-es">No dudes en pedir ajustes o diseños personalizados para que tu prenda sea única.</p>
+          <p class="lang-en" style="display:none;">Don't hesitate to request custom adjustments or designs for a unique garment.</p>
+        </article>
+      </div>
     </section>
 
     <section id="contacto" class="section-content">
-      <h2 class="lang-es">Contacto</h2>
-      <h2 class="lang-en" style="display:none;">Contact</h2>
+      <h2 class="lang-es">Contáctanos</h2>
+      <h2 class="lang-en" style="display:none;">Contact Us</h2>
 
-      <p class="lang-es">¿Tienes una idea o un pedido personalizado? Estamos aquí para crear piezas únicas y detalladas solo para ti.</p>
-      <p class="lang-en" style="display:none;">Have an idea or custom order? We are here to create unique and detailed pieces just for you.</p>
+      <form id="contact-form" action="mailto:carolinsantos@gmail.com" method="post" enctype="text/plain">
+        <label for="name" class="lang-es">Nombre</label>
+        <label for="name" class="lang-en" style="display:none;">Name</label>
+        <input type="text" id="name" name="Nombre" required />
 
-      <a class="button" href="mailto:carolinsantos@gmail.com">
-        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 4h16v16H4z"></path>
-          <polyline points="22,6 12,13 2,6"></polyline>
-        </svg>
-        <span class="lang-es">Enviar correo</span>
-        <span class="lang-en" style="display:none;">Send email</span>
-      </a>
+        <label for="email" class="lang-es">Correo electrónico</label>
+        <label for="email" class="lang-en" style="display:none;">Email</label>
+        <input type="email" id="email" name="Correo" required />
+
+        <label for="message" class="lang-es">Mensaje</label>
+        <label for="message" class="lang-en" style="display:none;">Message</label>
+        <textarea id="message" name="Mensaje" rows="5" required></textarea>
+
+        <button type="submit" class="button submit-btn lang-es">Enviar</button>
+        <button type="submit" class="button submit-btn lang-en" style="display:none;">Send</button>
+      </form>
     </section>
   </main>
 
@@ -79,6 +208,21 @@
       <span class="lang-es">&copy; 2025 Carolin Santos. Hecho con 🌞 y 🌊 desde el Caribe.</span>
       <span class="lang-en" style="display:none;">&copy; 2025 Carolin Santos. Made with 🌞 and 🌊 from the Caribbean.</span>
     </p>
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/carolinsantos_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37a4 4 0 1 1-4.88-4.88 4 4 0 0 1 4.88 4.88z"></path>
+          <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+        </svg>
+      </a>
+      <a href="mailto:carolinsantos@gmail.com" aria-label="Email" class="social-icon">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16v16H4z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+      </a>
+    </div>
   </footer>
 </body>
 </html>
