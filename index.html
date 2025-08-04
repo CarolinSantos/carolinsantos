@@ -10,19 +10,27 @@
 </head>
 <body>
 
-  <header>
-    <nav>
-      <a href="#bienvenida" class="active lang-es">Inicio</a>
-      <a href="#productos" class="lang-es">Productos</a>
-      <a href="#contacto" class="lang-es">Contacto</a>
-      <a href="#bienvenida" class="active lang-en" style="display:none;">Home</a>
-      <a href="#productos" class="lang-en" style="display:none;">Products</a>
-      <a href="#contacto" class="lang-en" style="display:none;">Contact</a>
-    </nav>
-    <button id="lang-toggle" aria-label="Cambiar idioma" title="Cambiar idioma">EN</button>
-  </header>
+ <header>
+  <div class="nav-inicio">
+    <a href="#inicio" class="active lang-es">Inicio</a>
+    <a href="#inicio" class="active lang-en" style="display:none;">Home</a>
+  </div>
 
-  <section class="hero">
+  <nav class="nav-menu">
+    <a href="#productos" class="lang-es">Productos</a>
+    <a href="#consejos" class="lang-es">Consejos</a>
+    <a href="#contacto" class="lang-es">Contacto</a>
+    <a href="#productos" class="lang-en" style="display:none;">Products</a>
+    <a href="#consejos" class="lang-en" style="display:none;">Tips</a>
+    <a href="#contacto" class="lang-en" style="display:none;">Contact</a>
+  </nav>
+
+  <div class="lang-toggle-container">
+    <button id="lang-toggle" aria-label="Cambiar idioma" title="Cambiar idioma">EN</button>
+  </div>
+</header>
+
+  <section id="inicio" class="hero">
     <img src="assets/logo.png" alt="Logo Carolin Santos" class="logo" />
     <div class="header-text">
       <h1>Carolin Santos</h1>
