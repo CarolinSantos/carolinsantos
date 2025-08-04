@@ -1,21 +1,27 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const langToggle = document.getElementById("lang-toggle");
-  let currentLang = "es";
+const langToggle = document.getElementById('lang-toggle');
+let currentLang = 'es';
 
-  langToggle.addEventListener("click", () => {
-    if (currentLang === "es") {
-      currentLang = "en";
-      langToggle.textContent = "EN";
-    } else {
-      currentLang = "es";
-      langToggle.textContent = "ES";
-    }
+function updateLanguage(lang) {
+  const esElements = document.querySelectorAll('.lang-es');
+  const enElements = document.querySelectorAll('.lang-en');
 
-    document.querySelectorAll(".lang.es").forEach(el => {
-      el.style.display = currentLang === "es" ? "inline" : "none";
-    });
-    document.querySelectorAll(".lang.en").forEach(el => {
-      el.style.display = currentLang === "en" ? "inline" : "none";
-    });
-  });
+  if (lang === 'es') {
+    esElements.forEach(el => el.style.display = '');
+    enElements.forEach(el => el.style.display = 'none');
+    langToggle.textContent = 'EN';
+    document.documentElement.lang = 'es';
+  } else {
+    esElements.forEach(el => el.style.display = 'none');
+    enElements.forEach(el => el.style.display = '');
+    langToggle.textContent = 'ES';
+    document.documentElement.lang = 'en';
+  }
+  currentLang = lang;
+}
+
+langToggle.addEventListener('click', () => {
+  const newLang = currentLang === 'es' ? 'en' : 'es';
+  updateLanguage(newLang);
 });
+
+updateLanguage(currentLang);
