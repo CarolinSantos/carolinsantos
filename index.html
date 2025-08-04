@@ -5,103 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Carolin Santos - Crochet Artesanal</title>
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <script defer src="scripts.js"></script>
 </head>
 <body>
   <header>
     <div class="header-wrapper">
       <img src="assets/logo.png" alt="Logo Carolin Santos" class="logo" />
-      <div class="textos-header">
-        <h1 class="logo-text">Carolin Santos</h1>
-        <p class="slogan">
-          <span class="lang es">Crochet con sabor a sol y calma</span>
-          <span class="lang en" style="display:none;">Crochet with the taste of sun and calm</span>
-        </p>
+      <div class="header-text">
+        <h1>Carolin Santos</h1>
+        <p class="slogan">Crochet con sabor a sol y calma</p>
       </div>
-      <button id="lang-toggle" aria-label="Cambiar idioma">ES</button>
+      <button id="lang-toggle" aria-label="Cambiar idioma" title="Cambiar idioma">EN</button>
     </div>
     <nav>
-      <a href="#bienvenida" class="nav-link">
-        <span class="lang es">Inicio</span>
-        <span class="lang en" style="display:none;">Home</span>
-      </a>
-      <a href="#productos" class="nav-link">
-        <span class="lang es">Productos</span>
-        <span class="lang en" style="display:none;">Products</span>
-      </a>
-      <a href="#contacto" class="nav-link">
-        <span class="lang es">Contacto</span>
-        <span class="lang en" style="display:none;">Contact</span>
-      </a>
+      <a href="#bienvenida" class="active">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
   <main>
-    <section id="bienvenida">
-      <h2>
-        <span class="lang es">¡Bienvenid@ a Carolin Santos!</span>
-        <span class="lang en" style="display:none;">Welcome to Carolin Santos!</span>
-      </h2>
-      <p>
-        <span class="lang es">Descubre el arte del crochet hecho a mano con dedicación y amor. Cada pieza está diseñada para brindarte calidez, estilo y la esencia del Caribe en cada hilo.</span>
-        <span class="lang en" style="display:none;">Discover the art of handmade crochet with dedication and love. Each piece is designed to bring you warmth, style, and the essence of the Caribbean in every stitch.</span>
-      </p>
+    <section id="bienvenida" class="section-content">
+      <h2 class="lang-es">¡Bienvenid@ a Carolin Santos!</h2>
+      <p class="lang-es">Descubre el arte del crochet hecho a mano con dedicación y amor. Cada pieza está diseñada para brindarte calidez, estilo y la esencia del Caribe en cada hilo.</p>
+
+      <h2 class="lang-en" style="display:none;">Welcome to Carolin Santos!</h2>
+      <p class="lang-en" style="display:none;">Discover the art of handmade crochet with dedication and love. Each piece is designed to bring you warmth, style, and the essence of the Caribbean in every stitch.</p>
     </section>
 
-    <section id="productos">
-      <h2>
-        <span class="lang es">Tejido con amor y tradición</span>
-        <span class="lang en" style="display:none;">Crochet made with love and tradition</span>
-      </h2>
+    <section id="productos" class="section-content">
+      <h2 class="lang-es">Nuestros productos destacados</h2>
+      <h2 class="lang-en" style="display:none;">Our Featured Products</h2>
+
       <div class="galeria">
-        <figure class="producto">
-          <img src="assets/cardigan1.jpg" alt="Cardigan boho" />
-          <figcaption>
-            <span class="lang es">Cardigan</span>
-            <span class="lang en" style="display:none;">Cardigan</span>
-          </figcaption>
-          <a href="#contacto" class="btn-consultar">
-            <span class="lang es">Consultar</span>
-            <span class="lang en" style="display:none;">Inquire</span>
-          </a>
-        </figure>
-        <figure class="producto">
-          <img src="assets/cardigan2.jpg" alt="Bolso playero" />
-          <figcaption>
-            <span class="lang es">Cardigan</span>
-            <span class="lang en" style="display:none;">Cardigan</span>
-          </figcaption>
-          <a href="#contacto" class="btn-consultar">
-            <span class="lang es">Consultar</span>
-            <span class="lang en" style="display:none;">Inquire</span>
-          </a>
-        </figure>
+        <img src="assets/cardigan1.jpg" alt="Cardigan de crochet hecho a mano" />
+        <img src="assets/cardigan2.jpg" alt="Bolso artesanal de crochet" />
       </div>
+
+      <p class="lang-es">Desde cardigans hasta bolsos y accesorios playeros, todo elaborado artesanalmente para ti. ¿Quieres algo personalizado? ¡Contáctanos!</p>
+      <p class="lang-en" style="display:none;">From cardigans to bags and beach accessories, all handcrafted just for you. Want something custom? Contact us!</p>
+
+      <a class="button" href="https://www.instagram.com/carolinsantos_/" target="_blank" rel="noopener noreferrer">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="16" y1="11" x2="12" y2="15"></line>
+          <line x1="12" y1="15" x2="8" y2="11"></line>
+        </svg>
+        <span class="lang-es">Ver en Instagram</span>
+        <span class="lang-en" style="display:none;">See on Instagram</span>
+      </a>
     </section>
 
-    <section id="contacto">
-      <h2>
-        <span class="lang es">Contacto</span>
-        <span class="lang en" style="display:none;">Contact</span>
-      </h2>
-      <p>
-        <span class="lang es">¿Tienes una idea o un pedido personalizado? Estamos aquí para crear piezas únicas y detalladas solo para ti.</span>
-        <span class="lang en" style="display:none;">Have an idea or custom order? We’re here to create unique and detailed pieces just for you.</span>
-      </p>
-      <a href="mailto:carolinsantos@email.com" class="button">
-        <span class="lang es">Enviar correo</span>
-        <span class="lang en" style="display:none;">Send email</span>
+    <section id="contacto" class="section-content">
+      <h2 class="lang-es">Contacto</h2>
+      <h2 class="lang-en" style="display:none;">Contact</h2>
+
+      <p class="lang-es">¿Tienes una idea o un pedido personalizado? Estamos aquí para crear piezas únicas y detalladas solo para ti.</p>
+      <p class="lang-en" style="display:none;">Have an idea or custom order? We are here to create unique and detailed pieces just for you.</p>
+
+      <a class="button" href="mailto:carolinsantos@gmail.com">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16v16H4z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+        <span class="lang-es">Enviar correo</span>
+        <span class="lang-en" style="display:none;">Send email</span>
       </a>
     </section>
   </main>
 
   <footer>
     <p>
-      <span class="lang es">© 2025 Carolin Santos. Hecho con 🌞 y 🌊 desde el Caribe.</span>
-      <span class="lang en" style="display:none;">© 2025 Carolin Santos. Made with 🌞 and 🌊 from the Caribbean.</span>
+      <span class="lang-es">&copy; 2025 Carolin Santos. Hecho con 🌞 y 🌊 desde el Caribe.</span>
+      <span class="lang-en" style="display:none;">&copy; 2025 Carolin Santos. Made with 🌞 and 🌊 from the Caribbean.</span>
     </p>
   </footer>
-
-  <script src="scripts.js"></script>
 </body>
 </html>
