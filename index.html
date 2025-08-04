@@ -3,22 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Carolin Santos - Crochet Artesanal</title>
+  <title>Carolin Santos</title>
   <link rel="stylesheet" href="styles.css" />
-  <script defer src="scripts.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Playfair+Display&family=Pacifico&display=swap" rel="stylesheet" />
 </head>
 <body>
+
   <header>
-    <div class="header-wrapper">
-      <img src="assets/logo.png" alt="Logo Carolin Santos" class="logo" />
-      <div class="header-text">
-        <h1>Carolin Santos</h1>
-        <p class="slogan lang-es">Crochet con sabor a sol y calma</p>
-        <p class="slogan lang-en" style="display:none;">Crochet with a taste of sun and calm</p>
-      </div>
-      <button id="lang-toggle" aria-label="Cambiar idioma" title="Cambiar idioma">EN</button>
-    </div>
     <nav>
       <a href="#bienvenida" class="active lang-es">Inicio</a>
       <a href="#productos" class="lang-es">Productos</a>
@@ -27,9 +17,19 @@
       <a href="#productos" class="lang-en" style="display:none;">Products</a>
       <a href="#contacto" class="lang-en" style="display:none;">Contact</a>
     </nav>
+    <button id="lang-toggle" aria-label="Cambiar idioma" title="Cambiar idioma">EN</button>
   </header>
 
-  <main>
+   <section class="hero">
+    <img src="assets/logo.png" alt="Logo Carolin Santos" class="logo" />
+    <div class="header-text">
+      <h1>Carolin Santos</h1>
+      <p class="slogan lang-es">Crochet con sabor a sol y calma</p>
+      <p class="slogan lang-en" style="display:none;">Crochet with a taste of sun and calm</p>
+    </div>
+  </section>
+
+<main>
     <section id="bienvenida" class="section-content">
       <h2 class="lang-es">¡Bienvenid@ a Carolin Santos!</h2>
       <p class="lang-es">
@@ -42,7 +42,6 @@
       </p>
     </section>
 
-    <!-- NUEVA SECCIÓN PRODUCTOS CON CATEGORÍAS -->
     <section id="productos" class="section-content">
       <h2 class="lang-es">Productos</h2>
       <h2 class="lang-en" style="display:none;">Products</h2>
@@ -52,24 +51,22 @@
         <h3 class="lang-es">Tops</h3>
         <h3 class="lang-en" style="display:none;">Tops</h3>
         <div class="galeria">
-          <article class="card" tabindex="0">
-            <img src="assets/top1.jpg" alt="Top de crochet blanco" />
-            <h4 class="lang-es">Top Blanco</h4>
-            <h4 class="lang-en" style="display:none;">White Top</h4>
-            <p class="lang-es">Ligero y fresco, ideal para verano.</p>
-            <p class="lang-en" style="display:none;">Light and fresh, perfect for summer.</p>
-            <button class="order-btn lang-es" aria-label="Pedir Top Blanco">Haz tu pedido</button>
-            <button class="order-btn lang-en" aria-label="Order White Top" style="display:none;">Order</button>
+           </article>
+          <article class="card coming-soon" tabindex="0" aria-label="Próximamente">
+            <h4 class="lang-es"> </h4>
+            <h4 class="lang-en" style="display:none;"> </h4>
+            <p class="lang-es"> </p>
+            <p class="lang-en" style="display:none;"> </p>
           </article>
-          <article class="card" tabindex="0">
-            <img src="assets/top2.jpg" alt="Top rosa de crochet" />
-            <h4 class="lang-es">Top Rosa</h4>
-            <h4 class="lang-en" style="display:none;">Pink Top</h4>
-            <p class="lang-es">Color suave con diseño artesanal.</p>
-            <p class="lang-en" style="display:none;">Soft color with handmade design.</p>
-            <button class="order-btn lang-es" aria-label="Pedir Top Rosa">Haz tu pedido</button>
-            <button class="order-btn lang-en" aria-label="Order Pink Top" style="display:none;">Order</button>
+
+           </article>
+          <article class="card coming-soon" tabindex="0" aria-label="Próximamente">
+            <h4 class="lang-es">Próximamente</h4>
+            <h4 class="lang-en" style="display:none;">Coming Soon</h4>
+            <p class="lang-es">Más diseños disponibles muy pronto.</p>
+            <p class="lang-en" style="display:none;">More designs available soon.</p>
           </article>
+
         </div>
       </div>
 
@@ -78,16 +75,21 @@
         <h3 class="lang-es">Bolsos</h3>
         <h3 class="lang-en" style="display:none;">Bags</h3>
         <div class="galeria">
-          <article class="card" tabindex="0">
-            <img src="assets/bolso1.jpg" alt="Bolso beige de crochet" />
-            <h4 class="lang-es">Bolso Beige</h4>
-            <h4 class="lang-en" style="display:none;">Beige Bag</h4>
-            <p class="lang-es">Perfecto para la playa o la ciudad.</p>
-            <p class="lang-en" style="display:none;">Perfect for beach or city.</p>
-            <button class="order-btn lang-es" aria-label="Pedir Bolso Beige">Haz tu pedido</button>
-            <button class="order-btn lang-en" aria-label="Order Beige Bag" style="display:none;">Order</button>
           </article>
-          <!-- Puedes agregar más bolsas aquí -->
+          <article class="card coming-soon" tabindex="0" aria-label="Próximamente">
+            <h4 class="lang-es">Próximamente</h4>
+            <h4 class="lang-en" style="display:none;">Coming Soon</h4>
+            <p class="lang-es">Más diseños disponibles muy pronto.</p>
+            <p class="lang-en" style="display:none;">More designs available soon.</p>
+          </article>
+
+          </article>
+          <article class="card coming-soon" tabindex="0" aria-label="Próximamente">
+            <h4 class="lang-es">Próximamente</h4>
+            <h4 class="lang-en" style="display:none;">Coming Soon</h4>
+            <p class="lang-es">Más diseños disponibles muy pronto.</p>
+            <p class="lang-en" style="display:none;">More designs available soon.</p>
+          </article>
         </div>
       </div>
 
@@ -97,30 +99,46 @@
         <h3 class="lang-en" style="display:none;">Cardigans</h3>
         <div class="galeria">
           <article class="card" tabindex="0">
-            <img src="assets/cardigan1.jpg" alt="Cardigan marrón" />
+            <img src="assets/cardigan2.jpg" alt="Cardigan marrón" />
             <h4 class="lang-es">Cardigan Marrón</h4>
             <h4 class="lang-en" style="display:none;">Brown Cardigan</h4>
             <p class="lang-es">Calidez y estilo para cualquier ocasión.</p>
             <p class="lang-en" style="display:none;">Warmth and style for any occasion.</p>
-            <button class="order-btn lang-es" aria-label="Pedir Cardigan Marrón">Haz tu pedido</button>
-            <button class="order-btn lang-en" aria-label="Order Brown Cardigan" style="display:none;">Order</button>
+            <button class="order-btn lang-es" aria-label="Pedir Cardigan Marrón" data-product="Cardigan Marrón">Haz tu pedido</button>
+            <button class="order-btn lang-en" aria-label="Order Brown Cardigan" style="display:none;" data-product="Brown Cardigan">Order</button>
           </article>
-          <!-- Más cardigans si quieres -->
+
+          <article class="card" tabindex="0">
+            <img src="assets/cardigan1.jpg" alt="Cardigan lila" />
+            <h4 class="lang-es">Cardigan Lila</h4>
+            <h4 class="lang-en" style="display:none;">Lilac Cardigan</h4>
+            <p class="lang-es">Comodidad y elegancia para tu día a día.</p>
+            <p class="lang-en" style="display:none;">Comfort and elegance for your daily life.</p>
+            <button class="order-btn lang-es" aria-label="Pedir Cardigan Gris" data-product="Cardigan Gris">Haz tu pedido</button>
+            <button class="order-btn lang-en" aria-label="Order Gray Cardigan" style="display:none;" data-product="Gray Cardigan">Order</button>
+          </article>
         </div>
       </div>
 
+      <!-- Categoría Otros -->
       <div class="categoria-productos">
         <h3 class="lang-es">Otros</h3>
         <h3 class="lang-en" style="display:none;">Others</h3>
         <div class="galeria">
-          <article class="card" tabindex="0">
-            <img src="assets/accesorio1.jpg" alt="Accesorio de crochet" />
-            <h4 class="lang-es">Accesorio Único</h4>
-            <h4 class="lang-en" style="display:none;">Unique Accessory</h4>
-            <p class="lang-es">Detalles que marcan la diferencia.</p>
-            <p class="lang-en" style="display:none;">Details that make the difference.</p>
-            <button class="order-btn lang-es" aria-label="Pedir Accesorio Único">Haz tu pedido</button>
-            <button class="order-btn lang-en" aria-label="Order Unique Accessory" style="display:none;">Order</button>
+           </article>
+          <article class="card coming-soon" tabindex="0" aria-label="Próximamente">
+            <h4 class="lang-es">Próximamente</h4>
+            <h4 class="lang-en" style="display:none;">Coming Soon</h4>
+            <p class="lang-es">Más diseños disponibles muy pronto.</p>
+            <p class="lang-en" style="display:none;">More designs available soon.</p>
+          </article>
+
+           </article>
+          <article class="card coming-soon" tabindex="0" aria-label="Próximamente">
+            <h4 class="lang-es">Próximamente</h4>
+            <h4 class="lang-en" style="display:none;">Coming Soon</h4>
+            <p class="lang-es">Más diseños disponibles muy pronto.</p>
+            <p class="lang-en" style="display:none;">More designs available soon.</p>
           </article>
         </div>
       </div>
@@ -148,7 +166,6 @@
       </div>
     </section>
 
-    <!-- NUEVA SECCIÓN CONSEJOS Y TIPS -->
     <section id="consejos" class="section-content">
       <h2 class="lang-es">Consejos y Tips para cuidar tus prendas</h2>
       <h2 class="lang-en" style="display:none;">Tips for Caring Your Garments</h2>
