@@ -68,14 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-
-
-
-
-
-
-
-=======
 const langToggle = document.getElementById('lang-toggle');
 let currentLang = 'es';
 
@@ -103,4 +95,3 @@ langToggle.addEventListener('click', () => {
 });
 
 updateLanguage(currentLang);
->>>>>>> 529bc497f5660ae30cf56aae693a29b9ec20925e
