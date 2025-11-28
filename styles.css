@@ -78,6 +78,41 @@ header {
   justify-self: end;
 }
 
+@media (max-width: 700px) {
+
+  header {
+    grid-template-columns: 1fr; /* Una sola columna */
+    padding: 1rem;
+    row-gap: 0.8rem;
+    text-align: center;
+  }
+
+  .nav-inicio {
+    justify-self: center; /* Centra el nombre */
+    font-size: 1.4rem;
+  }
+
+  .nav-menu {
+    justify-self: center;
+    flex-wrap: wrap; /* Permite que los links bajen */
+    gap: 1rem;
+    font-size: 1rem;
+  }
+
+  .nav-menu a {
+    padding: 0.3rem 0.6rem;
+  }
+
+  .lang-toggle-container {
+    justify-self: center;
+  }
+
+  #lang-toggle {
+    font-size: 0.9rem;
+    padding: 0.4rem 1.2rem;
+  }
+}
+
 #lang-toggle {
   background: transparent;
   border: 2px solid #a69bb8;
