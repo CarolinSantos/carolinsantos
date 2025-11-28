@@ -228,6 +228,13 @@ header {
   }
 }
 
+/* FIX SOLO PARA MÓVIL */
+@media (max-width: 700px) {
+  body {
+    padding-top: 150px;
+  }
+}
+
 main {
   max-width: 1300px;
   margin: 3rem auto 5rem auto;
